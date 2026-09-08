@@ -32,6 +32,7 @@ yarn-error.*
 
 # local env files
 .env*.local
+.env
 
 # typescript
 *.tsbuildinfo
@@ -41,3 +42,20 @@ example
 # generated native folders
 /ios
 /android
+
+# Python (FastAPI)
+api/.venv/
+api/__pycache__/
+api/**/__pycache__/
+api/**/*.pyc
+api/.env
+api/models/
+
+# Supabase local secrets (config.toml is checked in, secrets are not)
+supabase/.temp/
+supabase/.branches/
+
+# AI-tooling artifacts (kept out of the public repo)
+.claude/
+AGENTS.md
+CLAUDE.md

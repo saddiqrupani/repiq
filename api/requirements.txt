@@ -1,0 +1,17 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pyjwt==2.10.1
+cryptography>=42.0.0
+python-dotenv==1.0.1
+httpx==0.28.1
+pydantic==2.10.4
+
+# Form analysis: pose estimation + video I/O.
+# numpy pinned <2 for mediapipe compat.
+mediapipe==0.10.18
+opencv-python-headless==4.10.0.84
+numpy>=1.26,<2.0
+pillow>=10.4
+
+# Coach quiz generation off form-analysis feedback.
+openai>=1.55
